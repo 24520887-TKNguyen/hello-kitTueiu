@@ -112,26 +112,27 @@
                 50% { transform: scale(1.2) rotate(90deg); opacity: 0.8; }
                 100% { transform: scale(1) rotate(0deg); opacity: 1; }
             }
-            .celebration-text {
-                font-family: 'Quicksand', sans-serif;
-                font-size: clamp(24px, 6vw, 48px);
-                font-weight: 700;
-                color: #ff69b4;
-                margin: 5px 0 10px 0;
-                text-shadow: 
-                    2px 2px 0px #fff,
-                    -2px -2px 0px #fff,
-                    2px -2px 0px #fff,
-                    -2px 2px 0px #fff,
-                    0px 2px 0px #fff,
-                    0px -2px 0px #fff,
-                    2px 0px 0px #fff,
-                    -2px 0px 0px #fff,
-                    4px 4px 8px rgba(0,0,0,0.3);
-                animation: textGlow 2s ease-in-out infinite alternate, textBounce 3s ease-in-out infinite;
-                text-align: center;
-                padding: 0 10px;
-            }
+        .celebration-text {
+            font-family: 'Quicksand', sans-serif;
+            font-size: clamp(18px, 4.5vw, 36px);
+            font-weight: 700;
+            color: #ff69b4;
+            margin: 5px 0 10px 0;
+            text-shadow: 
+                2px 2px 0px #fff,
+                -2px -2px 0px #fff,
+                2px -2px 0px #fff,
+                -2px 2px 0px #fff,
+                0px 2px 0px #fff,
+                0px -2px 0px #fff,
+                2px 0px 0px #fff,
+                -2px 0px 0px #fff,
+                4px 4px 8px rgba(0,0,0,0.3);
+            animation: textGlow 2s ease-in-out infinite alternate, textBounce 3s ease-in-out infinite;
+            text-align: center;
+            padding: 0 15px;
+            line-height: 1.2;
+        }
             @keyframes textBounce {
                 0%, 100% { transform: translateY(0px) scale(1); }
                 50% { transform: translateY(-5px) scale(1.05); }
@@ -225,6 +226,11 @@
                     font-size: 14px;
                     max-height: 300px;
                 }
+                .celebration-text {
+                    font-size: 16px;
+                    padding: 0 20px;
+                    line-height: 1.1;
+                }
             }
             
             @media (max-width: 480px) {
@@ -245,6 +251,11 @@
                 }
                 .letter::before {
                     font-size: 60px;
+                }
+                .celebration-text {
+                    font-size: 14px;
+                    padding: 0 15px;
+                    line-height: 1.0;
                 }
             }
         </style>
