@@ -1,120 +1,118 @@
-    <!DOCTYPE html>
-    <html lang="vi">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>💕 Hello KitTue - Thư Chúc 20/10 💕</title>
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <style>
-            body {
-                font-family: 'Quicksand', 'Fredoka One', cursive, sans-serif; /* Font Hello Kitty style */
-                background-image: url('b-hello.gif');
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                color: #ff69b4; /* Màu hồng đậm */
-                text-align: center;
-                margin: 0;
-                padding: 0;
-                min-height: 100vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-            }
-            .container {
-                position: relative;
-            }
-            .letter {
-                width: 200px;
-                height: 200px;
-                background: transparent;
-                border: none;
-                border-radius: 0;
-                box-shadow: none;
-                cursor: pointer;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                font-size: 20px;
-                transition: all 0.5s ease;
-                position: relative;
-                overflow: hidden;
-            }
-            .letter:hover {
-                transform: scale(1.1) rotate(3deg);
-            }
-            .letter::before {
-                content: "💌"; /* Envelope icon */
-                font-size: 120px;
-                margin-bottom: 0;
-                animation: float 2s ease-in-out infinite;
-            }
-            @keyframes float {
-                0%, 100% { transform: translateY(0px); }
-                50% { transform: translateY(-10px); }
-            }
-            .letter-text {
-                font-family: 'Quicksand', sans-serif;
-                font-weight: 600;
-                color: #ff69b4;
-                text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-            }
-            .celebration {
-                display: none;
-                text-align: center;
-                animation: celebrationIn 1s ease-out;
-                transition: transform 0.3s ease;
-            }
-            .scroll-hint {
-                opacity: 0;
-                transform: translateY(50px);
-                transition: all 1s ease-out;
-            }
-            .scroll-hint.show {
-                opacity: 1;
-                transform: translateY(0);
-            }
-            .pointer-icon {
-                transition: transform 0.3s ease;
-            }
-            .pointer-icon:hover {
-                transform: scale(1.2);
-            }
-            @keyframes celebrationIn {
-                0% { opacity: 0; transform: scale(0.5) rotate(-10deg); }
-                100% { opacity: 1; transform: scale(1) rotate(0deg); }
-            }
-            .kitty-icons {
-                display: flex;
-                justify-content: center;
-                gap: 15px;
-                margin: 10px 0 5px 0;
-                flex-wrap: wrap;
-            }
-            .kitty-icon {
-                font-size: 80px;
-                animation: bounceIn 0.8s ease-out;
-                animation-delay: calc(var(--i) * 0.2s);
-                width: 120px;
-                height: 120px;
-                overflow: hidden;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-shrink: 0;
-            }
-            @keyframes bounceIn {
-                0% { transform: scale(0) rotate(180deg); opacity: 0; }
-                50% { transform: scale(1.2) rotate(90deg); opacity: 0.8; }
-                100% { transform: scale(1) rotate(0deg); opacity: 1; }
-            }
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 Gửi Hello KitTUE 💕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', 'Fredoka One', cursive, sans-serif; /* Font Hello Kitty style */
+            background-image: url('b-hello.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #ff69b4; /* Màu hồng đậm */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container {
+            position: relative;
+        }
+        .letter {
+            width: 200px;
+            height: 200px;
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .letter:hover {
+            transform: scale(1.1) rotate(3deg);
+        }
+        .letter::before {
+            content: "💌"; /* Envelope icon */
+            font-size: 120px;
+            margin-bottom: 0;
+            animation: float 2s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .letter-text {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+            color: #ff69b4;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .celebration {
+            display: none;
+            text-align: center;
+            animation: celebrationIn 1s ease-out;
+            transition: transform 0.3s ease;
+        }
+        .scroll-hint {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s ease-out;
+        }
+        .scroll-hint.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .pointer-icon {
+            transition: transform 0.3s ease;
+        }
+        .pointer-icon:hover {
+            transform: scale(1.2);
+        }
+        @keyframes celebrationIn {
+            0% { opacity: 0; transform: scale(0.5) rotate(-10deg); }
+            100% { opacity: 1; transform: scale(1) rotate(0deg); }
+        }
+        .kitty-icons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 10px 0 5px 0;
+        }
+        .kitty-icon {
+            font-size: 80px;
+            animation: bounceIn 0.8s ease-out;
+            animation-delay: calc(var(--i) * 0.2s);
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0) rotate(180deg); opacity: 0; }
+            50% { transform: scale(1.2) rotate(90deg); opacity: 0.8; }
+            100% { transform: scale(1) rotate(0deg); opacity: 1; }
+        }
         .celebration-text {
             font-family: 'Quicksand', sans-serif;
-            font-size: clamp(18px, 4.5vw, 36px);
+            font-size: 48px;
             font-weight: 700;
             color: #ff69b4;
             margin: 5px 0 10px 0;
@@ -129,241 +127,505 @@
                 -2px 0px 0px #fff,
                 4px 4px 8px rgba(0,0,0,0.3);
             animation: textGlow 2s ease-in-out infinite alternate, textBounce 3s ease-in-out infinite;
-            text-align: center;
-            padding: 0 15px;
-            line-height: 1.2;
         }
-            @keyframes textBounce {
-                0%, 100% { transform: translateY(0px) scale(1); }
-                50% { transform: translateY(-5px) scale(1.05); }
+        @keyframes textBounce {
+            0%, 100% { transform: translateY(0px) scale(1); }
+            50% { transform: translateY(-5px) scale(1.05); }
+        }
+        @keyframes textGlow {
+            from { 
+                text-shadow: 
+                    2px 2px 0px #fff,
+                    -2px -2px 0px #fff,
+                    2px -2px 0px #fff,
+                    -2px 2px 0px #fff,
+                    0px 2px 0px #fff,
+                    0px -2px 0px #fff,
+                    2px 0px 0px #fff,
+                    -2px 0px 0px #fff,
+                    4px 4px 8px rgba(0,0,0,0.3),
+                    0 0 10px rgba(255,105,180,0.3); 
             }
-            @keyframes textGlow {
-                from { 
-                    text-shadow: 
-                        2px 2px 0px #fff,
-                        -2px -2px 0px #fff,
-                        2px -2px 0px #fff,
-                        -2px 2px 0px #fff,
-                        0px 2px 0px #fff,
-                        0px -2px 0px #fff,
-                        2px 0px 0px #fff,
-                        -2px 0px 0px #fff,
-                        4px 4px 8px rgba(0,0,0,0.3),
-                        0 0 10px rgba(255,105,180,0.3); 
-                }
-                to { 
-                    text-shadow: 
-                        2px 2px 0px #fff,
-                        -2px -2px 0px #fff,
-                        2px -2px 0px #fff,
-                        -2px 2px 0px #fff,
-                        0px 2px 0px #fff,
-                        0px -2px 0px #fff,
-                        2px 0px 0px #fff,
-                        -2px 0px 0px #fff,
-                        4px 4px 8px rgba(0,0,0,0.3),
-                        0 0 20px rgba(255,105,180,0.8); 
-                }
+            to { 
+                text-shadow: 
+                    2px 2px 0px #fff,
+                    -2px -2px 0px #fff,
+                    2px -2px 0px #fff,
+                    -2px 2px 0px #fff,
+                    0px 2px 0px #fff,
+                    0px -2px 0px #fff,
+                    2px 0px 0px #fff,
+                    -2px 0px 0px #fff,
+                    4px 4px 8px rgba(0,0,0,0.3),
+                    0 0 20px rgba(255,105,180,0.8); 
             }
+        }
+        .message {
+            display: none;
+            background: url('nen-thu-3.gif') center/cover;
+            padding: 30px 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(255,105,180,0.3);
+            max-width: 700px;
+            margin: 30px auto 0 auto;
+            border: 3px solid #ff69b4;
+            position: relative;
+            animation: messageSlideIn 1.5s ease-out;
+        }
+        @keyframes messageSlideIn {
+            0% { opacity: 0; transform: translateY(50px) scale(0.8); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .message-content {
+            background: rgba(255,255,255,0.9);
+            padding: 25px;
+            border-radius: 15px;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            text-align: left;
+            box-shadow: inset 0 2px 10px rgba(0,0,0,0.05);
+            backdrop-filter: blur(5px);
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        .kitty {
+            position: absolute;
+            top: -100px;
+            left: -50px;
+            width: 100px;
+            height: 100px;
+        }
+        .kitty img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* CSS cho icon bông hoa */
+        .flower-icon:hover {
+            transform: scale(1.3) rotate(10deg);
+        }
+        
+        @keyframes flowerFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            25% { transform: translateY(-5px) rotate(2deg); }
+            50% { transform: translateY(-10px) rotate(0deg); }
+            75% { transform: translateY(-5px) rotate(-2deg); }
+        }
+        
+        /* CSS cho modal GIF */
+        .gif-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+        }
+        
+        .gif-container {
+            position: relative;
+            margin: 2.5% auto;
+            padding: 10px;
+            width: 95%;
+            max-width: none;
+            text-align: center;
+            animation: modalSlideIn 0.5s ease-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 95vh;
+        }
+        
+        @keyframes modalSlideIn {
+            0% { 
+                opacity: 0; 
+                transform: scale(0.5) translateY(-50px); 
+            }
+            100% { 
+                opacity: 1; 
+                transform: scale(1) translateY(0); 
+            }
+        }
+
+        /* ===== MOBILE RESPONSIVE CHO IPHONE ===== */
+        
+        /* iPhone 14 Pro Max (430px) */
+        @media (max-width: 430px) {
+            .letter {
+                width: 160px;
+                height: 160px;
+            }
+            
+            .letter::before {
+                font-size: 90px;
+            }
+            
+            .kitty-icons {
+                gap: 15px;
+                margin: 5px 0;
+            }
+            
+            .kitty-icon {
+                width: 80px;
+                height: 80px;
+            }
+            
+            .celebration-text {
+                font-size: 20px;
+                padding: 0 15px;
+                line-height: 1.1;
+            }
+            
             .message {
-                display: none;
-                background: url('nen-thu-3.gif') center/cover;
                 padding: 20px;
-                border-radius: 20px;
-                box-shadow: 0 8px 32px rgba(255,105,180,0.3);
-                max-width: 90%;
-                width: 100%;
                 margin: 20px auto 0 auto;
-                border: 3px solid #ff69b4;
-                position: relative;
-                animation: messageSlideIn 1.5s ease-out;
+                max-width: 95%;
             }
-            @keyframes messageSlideIn {
-                0% { opacity: 0; transform: translateY(50px) scale(0.8); }
-                100% { opacity: 1; transform: translateY(0) scale(1); }
-            }
+            
             .message-content {
-                background: rgba(255,255,255,0.9);
                 padding: 15px;
-                border-radius: 15px;
-                font-family: 'Quicksand', sans-serif;
-                font-size: clamp(14px, 4vw, 16px);
-                line-height: 1.6;
-                color: #333;
-                text-align: left;
-                box-shadow: inset 0 2px 10px rgba(0,0,0,0.05);
-                backdrop-filter: blur(5px);
+                font-size: 14px;
                 max-height: 400px;
-                overflow-y: auto;
-            }
-            /* Mobile Responsive */
-            @media (max-width: 768px) {
-                .kitty-icons {
-                    gap: 10px;
-                    margin: 5px 0;
-                }
-                .kitty-icon {
-                    width: 80px;
-                    height: 80px;
-                }
-                .letter {
-                    width: 180px;
-                    height: 180px;
-                }
-                .letter::before {
-                    font-size: 100px;
-                }
-                .message {
-                    padding: 15px;
-                    margin: 15px auto 0 auto;
-                }
-                .message-content {
-                    padding: 10px;
-                    font-size: 14px;
-                    max-height: 300px;
-                }
-                .celebration-text {
-                    font-size: 22px;
-                    padding: 0 20px;
-                    line-height: 1.1;
-                }
-                .scroll-hint div:first-child {
-                    font-size: 16px;
-                }
             }
             
-            @media (max-width: 480px) {
-                .kitty-icons {
-                    gap: 8px;
-                }
-                .kitty-icon {
-                    width: 70px;
-                    height: 70px;
-                }
-                .letter {
-                    width: 160px;
-                    height: 160px;
-                }
-                .letter::before {
-                    font-size: 90px;
-                }
-                .celebration-text {
-                    font-size: 20px;
-                    padding: 0 15px;
-                    line-height: 1.0;
-                }
-                .scroll-hint div:first-child {
-                    font-size: 14px;
-                }
+            .scroll-hint div:first-child {
+                font-size: 14px;
+                margin-top: 20px;
             }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="letter" onclick="openLetter()">
-            </div>
             
-            <div class="celebration" id="celebration" onclick="showMessage()">
-                <div class="kitty-icons">
-                    <div class="kitty-icon" style="--i: 1;">
-                        <img src="giphy (1).gif" onerror="this.style.display='none';" style="width: 200%; height: 200%; object-fit: cover; object-position: center top;">
-                    </div>
-                    <div class="kitty-icon" style="--i: 2;">
-                        <img src="giphy.gif"  onerror="this.style.display='none';" style="width: 200%; height: 200%; object-fit: cover; object-position: center top;">
-                    </div>
-                    <div class="kitty-icon" style="--i: 3;">
-                        <img src="giphy (2).gif" onerror="this.style.display='none';" style="width: 200%; height: 200%; object-fit: cover; object-position: center top;">
-                    </div>
+            .pointer-icon {
+                font-size: 20px;
+                margin-top: 10px;
+            }
+        }
+
+        /* iPhone 14 Pro (393px) */
+        @media (max-width: 393px) {
+            .letter {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .letter::before {
+                font-size: 85px;
+            }
+            
+            .kitty-icon {
+                width: 75px;
+                height: 75px;
+            }
+            
+            .celebration-text {
+                font-size: 18px;
+                padding: 0 12px;
+            }
+            
+            .message {
+                padding: 15px;
+                margin: 15px auto 0 auto;
+            }
+            
+            .message-content {
+                padding: 12px;
+                font-size: 13px;
+                max-height: 350px;
+            }
+            
+            .scroll-hint div:first-child {
+                font-size: 13px;
+            }
+        }
+
+        /* iPhone 14 (390px) */
+        @media (max-width: 390px) {
+            .letter {
+                width: 145px;
+                height: 145px;
+            }
+            
+            .letter::before {
+                font-size: 80px;
+            }
+            
+            .kitty-icon {
+                width: 70px;
+                height: 70px;
+            }
+            
+            .celebration-text {
+                font-size: 17px;
+                padding: 0 10px;
+            }
+            
+            .message {
+                padding: 12px;
+                margin: 12px auto 0 auto;
+            }
+            
+            .message-content {
+                padding: 10px;
+                font-size: 12px;
+                max-height: 320px;
+            }
+            
+            .scroll-hint div:first-child {
+                font-size: 12px;
+            }
+        }
+
+        /* iPhone SE (375px) */
+        @media (max-width: 375px) {
+            .letter {
+                width: 140px;
+                height: 140px;
+            }
+            
+            .letter::before {
+                font-size: 75px;
+            }
+            
+            .kitty-icon {
+                width: 65px;
+                height: 65px;
+            }
+            
+            .celebration-text {
+                font-size: 16px;
+                padding: 0 8px;
+            }
+            
+            .message {
+                padding: 10px;
+                margin: 10px auto 0 auto;
+            }
+            
+            .message-content {
+                padding: 8px;
+                font-size: 11px;
+                max-height: 300px;
+            }
+            
+            .scroll-hint div:first-child {
+                font-size: 11px;
+            }
+        }
+
+        /* iPhone Mini (360px) */
+        @media (max-width: 360px) {
+            .letter {
+                width: 130px;
+                height: 130px;
+            }
+            
+            .letter::before {
+                font-size: 70px;
+            }
+            
+            .kitty-icon {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .celebration-text {
+                font-size: 15px;
+                padding: 0 5px;
+            }
+            
+            .message {
+                padding: 8px;
+                margin: 8px auto 0 auto;
+            }
+            
+            .message-content {
+                padding: 6px;
+                font-size: 10px;
+                max-height: 280px;
+            }
+            
+            .scroll-hint div:first-child {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="letter" onclick="showInitialGif()">
+        </div>
+        
+        <div class="celebration" id="celebration" onclick="showMessage()">
+            <div class="kitty-icons">
+                <div class="kitty-icon" style="--i: 1;">
+                    <img src="giphy (1).gif" onerror="this.style.display='none';" style="width: 200%; height: 200%; object-fit: cover; object-position: center top;">
                 </div>
-                <div class="celebration-text">🎀 Chúc mừng Ngày Phụ Nữ 20/10! 🎀</div>
-                <div class="scroll-hint" id="scrollHint">
-                    <div style="margin-top: 30px; font-size: 18px; color: #FF0000; font-family: 'Quicksand', sans-serif; font-weight: 600; line-height: 1.5; text-shadow: 1px 1px 2px rgba(255,255,255,0.8);">
-                        Cô bé ơi, có một anh chàng gửi đến những tâm tình cho cô bé này:
-                    </div>
-                    <div class="pointer-icon" onclick="showMessage()" style="margin-top: 15px; font-size: 24px; color: #ff69b4; font-family: 'Quicksand', sans-serif; cursor: pointer;">
-                        👆 
-                    </div>
+                <div class="kitty-icon" style="--i: 2; width: 180px; height: 180px;">
+                    <img src="giphy.gif"  onerror="this.style.display='none';" style="width: 200%; height: 200%; object-fit: cover; object-position: center top;">
+                </div>
+                <div class="kitty-icon" style="--i: 3;">
+                    <img src="giphy (2).gif" onerror="this.style.display='none';" style="width: 200%; height: 200%; object-fit: cover; object-position: center top;">
                 </div>
             </div>
-            
-            <div class="message" id="message">
-                <div class="message-content">
-                    <p>💕 <strong>Tuệ yêu dấu ơi,</strong></p>
-                    <p>🎀 Ngày 20/10 này, Tuệ không chỉ là người phụ nữ đẹp nhất, mà còn là ánh sáng rực rỡ nhất trong cuộc đời Kiên. 🌸</p>
-                    
-                    <p>Thật khó để diễn tả hết những cảm xúc to lớn, sâu lắng mà Kiên đã dành cho Tuệ, nhưng Kiên muốn Tuệ biết rằng, mỗi khoảnh khắc có Tuệ đều là một món quà vô giá.</p>
-                    
-                    <p>Tình cảm này không phải là một cơn gió thoáng qua, mà là một gốc rễ đang bám sâu và sẽ mãi vững chắc. 🍓</p>
-                    
-                    <p>Kiên mong Tuệ hãy đón nhận tình cảm này, dù nó chưa được bày tỏ hết. Kiên tin rằng, Tuệ chính là bến đỗ bình yên, Kiên sẽ là điểm tựa vững chắc, và mối quan hệ này là mục tiêu lâu dài mà hai ta cùng chung tay.</p>
-                    
-                    <p>Hãy cho Kiên cơ hội để chứng minh rằng: Tình yêu Kiên dành cho Tuệ sẽ không chỉ là một lời hứa, mà là sự đảm bảo về một hành trình hạnh phúc, bền chặt Tuệ nhé! 💖</p>
-                    
-                    <p><strong>Chúc Tuệ một ngày 20/10 thật hạnh phúc, và hy vọng trong tương lai, chúng ta sẽ có thêm thật nhiều ngày ý nghĩa như thế này! 🎀</strong></p>
+            <div class="celebration-text">🎀 Chúc mừng Ngày Phụ Nữ 20/10! 🎀</div>
+            <div class="scroll-hint" id="scrollHint">
+                <div style="margin-top: 30px; font-size: 18px; color: #FF0000; font-family: 'Quicksand', sans-serif; font-weight: 600; line-height: 1.5; text-shadow: 1px 1px 2px rgba(255,255,255,0.8);">
+                    Cô bé ơi, có một anh chàng gửi những tâm tình đến cho cô bé này:
+                </div>
+                <div class="pointer-icon" onclick="showMessage()" style="margin-top: 15px; font-size: 24px; color: #ff69b4; font-family: 'Quicksand', sans-serif; cursor: pointer;">
+                    👆 
                 </div>
             </div>
         </div>
-
-        <script>
-            let messageShown = false;
-            let celebrationShown = false;
-            
-            function openLetter() {
-                // Ẩn thư với hiệu ứng
-                const letter = document.querySelector('.letter');
-                letter.style.transform = 'scale(0.8) rotate(5deg)';
-                letter.style.opacity = '0';
+        
+        <div class="message" id="message">
+            <div class="message-content">
+                <p>💕 <strong>Tuệ yêu dấu ơi,</strong></p>
+                <p>🎀 Bạn iu biết gì hong? Ngày 20/10 này, bạn iu không chỉ là người phụ nữ đẹp nhất, mà còn là ánh sáng rực rỡ giúp tôi thấy rõ nụ cười và niềm vui của bạn. Tôi chỉ mong bạn luôn thấy an toàn để thể hiện hết mọi cảm xúc và điều tuyệt vời bên trong bạn thôi! 🌟</p>
                 
-                // Hiện phần chúc mừng với 3 icon Hello Kitty
-                setTimeout(() => {
-                    document.getElementById('celebration').style.display = 'block';
-                    letter.style.display = 'none';
-                    celebrationShown = true;
-                    
-                    // Thêm scroll event listener
-                    window.addEventListener('scroll', handleScroll);
-                    
-                    // Hiện dòng chữ "Cô bé ơi" sau 2 giây
-                    showScrollHint();
-                }, 500);
-            }
+                <p>Chúc bạn iu của tui mau ăn chóng lớn và ngoan ngoãn nhé!! Bạn iu sẽ luôn vui vẻ và nở nụ cười trên môi vì bạn iu cười rất rất rất đẹp luôn. Mong bạn iu sẽ không bị "tấn công" bởi những tiêu cực của cuộc sống nữa, vì đã có tôi ở đây, bảo vệ và đỡ hết choa bạn.😉💖 Chúc bạn iu ngày càng xinh xắn, dễ thương, mong bạn có tất cả trừ vất vả ạ!!!🌸</p>
+                
+                <p>Tình cảm này không phải 'chóng đến rồi đi' đâu, nó là cái cây con bé bé xinh xinh đang 'bám rễ' trong tim tôi rồi, sẽ lớn lên và vững vàng mãi thôi! 🌱</p>
+                
+                <p>Tuệ ơi, tình cảm này Kiên đang gửi gắm dần dần, mong Tuệ cứ thoải mái nhận lấy nha. Kiên biết Tuệ siêu xứng đáng với những điều tốt đẹp! Yên tâm, Kiên sẽ là người đồng hành vững chắc, muốn đi đường dài thì phải đi cùng nhau thui!.</p>
+                
+                <p>Hãy cho Kiên cơ hội để chứng minh rằng: Tình yêu Kiên dành cho Tuệ sẽ không chỉ là một lời hứa, mà là sự đảm bảo về một hành trình hạnh phúc, bền chặt Tuệ nhé! 💖</p>
+                
+                <p><strong>Chúc Tuệ một ngày 20/10 thật hạnh phúc, và hy vọng trong tương lai, chúng ta sẽ có thêm thật nhiều ngày ý nghĩa như thế này! 🎀</strong></p>
+                
+                <!-- Icon bông hoa ở cuối thư -->
+                <div style="text-align: center; margin-top: 30px;">
+                    <div class="flower-icon" onclick="showGif()" style="cursor: pointer; display: inline-block; font-size: 40px; animation: flowerFloat 3s ease-in-out infinite; transition: transform 0.3s ease;">
+                        🌸
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal hiển thị GIF ban đầu -->
+        <div id="initialGifModal" class="gif-modal" onclick="closeInitialGif()">
+            <div class="gif-container" onclick="event.stopPropagation()">
+                <img id="initialGifImage" src="hoa.gif" alt="Initial GIF" style="max-width: 95vw; max-height: 95vh; border-radius: 10px; cursor: pointer;" onclick="closeInitialGifAndShowCelebration()">
+            </div>
+        </div>
+        
+        <!-- Modal hiển thị GIF ở cuối thư -->
+        <div id="gifModal" class="gif-modal" onclick="closeGif()">
+            <div class="gif-container" onclick="event.stopPropagation()">
+                <img id="gifImage" src="" alt="Surprise GIF" style="max-width: 95vw; max-height: 95vh; border-radius: 10px;">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let messageShown = false;
+        let celebrationShown = false;
+        
+        // Hàm hiển thị GIF ban đầu khi click vào thư
+        function showInitialGif() {
+            const modal = document.getElementById('initialGifModal');
+            modal.style.display = 'block';
+        }
+        
+        // Hàm đóng GIF ban đầu và hiện celebration
+        function closeInitialGifAndShowCelebration() {
+            const modal = document.getElementById('initialGifModal');
+            modal.style.display = 'none';
             
-            function handleScroll() {
-                if (celebrationShown && !messageShown) {
-                    const scrollHint = document.getElementById('scrollHint');
-                    if (scrollHint) {
-                        scrollHint.classList.add('show');
-                    }
+            // Ẩn thư với hiệu ứng
+            const letter = document.querySelector('.letter');
+            letter.style.transform = 'scale(0.8) rotate(5deg)';
+            letter.style.opacity = '0';
+            
+            // Hiện phần chúc mừng Bài tập 3 icon Hello Kitty
+            setTimeout(() => {
+                document.getElementById('celebration').style.display = 'block';
+                letter.style.display = 'none';
+                celebrationShown = true;
+                
+                // Thêm scroll event listener
+                window.addEventListener('scroll', handleScroll);
+                
+                // Hiện dòng chữ "Cô bé ơi" sau 2 giây
+                showScrollHint();
+            }, 500);
+        }
+        
+        // Hàm đóng modal GIF ban đầu (khi click ra ngoài)
+        function closeInitialGif() {
+            const modal = document.getElementById('initialGifModal');
+            modal.style.display = 'none';
+        }
+        
+        function handleScroll() {
+            if (celebrationShown && !messageShown) {
+                const scrollHint = document.getElementById('scrollHint');
+                if (scrollHint) {
+                    scrollHint.classList.add('show');
                 }
             }
-            
-            // Thêm event listener để hiện dòng chữ "Cô bé ơi" ngay khi celebration hiện
-            function showScrollHint() {
-                setTimeout(() => {
-                    const scrollHint = document.getElementById('scrollHint');
-                    if (scrollHint) {
-                        scrollHint.classList.add('show');
-                    }
-                }, 2000); // Hiện sau 2 giây
-            }
-            
-            function showMessage() {
-                if (!messageShown) {
-                    messageShown = true;
-                    document.getElementById('message').style.display = 'block';
-                    
-                    // Cuộn xuống để hiện thư
-                    document.getElementById('message').scrollIntoView({ 
-                        behavior: 'smooth' 
-                    });
-                    
-                    // Ẩn hướng dẫn click sau khi hiện thư
-                    const instruction = document.querySelector('.pointer-icon');
-                    if (instruction) {
-                        instruction.style.display = 'none';
-                    }
+        }
+        
+        // Thêm event listener để hiện dòng chữ "Cô bé ơi" ngay khi celebration hiện
+        function showScrollHint() {
+            setTimeout(() => {
+                const scrollHint = document.getElementById('scrollHint');
+                if (scrollHint) {
+                    scrollHint.classList.add('show');
+                }
+            }, 2000); // Hiện sau 2 giây
+        }
+        
+        function showMessage() {
+            if (!messageShown) {
+                messageShown = true;
+                document.getElementById('message').style.display = 'block';
+                
+                // Cuộn xuống để hiện thư
+                document.getElementById('message').scrollIntoView({ 
+                    behavior: 'smooth' 
+                });
+                
+                // Ẩn hướng dẫn click sau khi hiện thư
+                const instruction = document.querySelector('.pointer-icon');
+                if (instruction) {
+                    instruction.style.display = 'none';
                 }
             }
-        </script>
-    </body>
-    </html>
+        }
+        
+        // Hàm hiển thị GIF ở cuối thư
+        function showGif() {
+            const modal = document.getElementById('gifModal');
+            const gifImage = document.getElementById('gifImage');
+            
+            // Bạn có thể thay đổi đường dẫn GIF ở đây
+            // Ví dụ: gifImage.src = 'your-gif-file.gif';
+            gifImage.src = 'hoa-2.gif'; // Thay đổi tên file GIF của bạn
+            
+            modal.style.display = 'block';
+            
+            // Thêm hiệu ứng âm thanh nếu muốn (tùy chọn)
+            // const audio = new Audio('sound.mp3');
+            // audio.play();
+        }
+        
+        // Hàm đóng modal GIF ở cuối thư
+        function closeGif() {
+            const modal = document.getElementById('gifModal');
+            modal.style.display = 'none';
+        }
+        
+        // Đóng modal khi nhấn phím ESC
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeGif();
+                closeInitialGif();
+            }
+        });
+    </script>
+</body>
+</html>
